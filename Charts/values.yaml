@@ -1,0 +1,21 @@
+applicationName: my-first-app
+
+image:
+  frontend: dridibilel/gitlab_ci:frontend
+  backend: dridibilel/gitlab_ci:backend
+
+service:
+  frontendPort: 3000
+  backendPort: 5000
+  type: NodePort
+
+ingress:
+  enabled: true
+  domain: my-first-app.local
+  paths:
+    - path: /
+      backendService: frontend
+      port: 3000
+    - path: /api
+      backendService: backend
+      port: 5000

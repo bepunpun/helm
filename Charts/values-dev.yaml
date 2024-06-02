@@ -1,0 +1,17 @@
+replicaCount: 1
+
+backend:
+  image:
+    tag: dev
+
+frontend:
+  image:
+    tag: dev
+
+ingress:
+  enabled: true
+  hosts:
+    - host: dev.myapp.example.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific

@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  mern-app:
+  - apiVersion: v2
+    created: "2024-06-02T14:17:59.207710987+01:00"
+    description: A Helm chart for deploying a MERN stack application
+    digest: 6fd7621b45f819c5e086e1dd34d340e1de40a60423b96e138f9d9b3d73a562fb
+    name: mern-app
+    urls:
+    - https://bepunpun.github.io/helm/mern-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-06-02T14:17:59.20736035+01:00"

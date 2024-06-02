@@ -1,0 +1,17 @@
+replicaCount: 3
+
+backend:
+  image:
+    tag: prod
+
+frontend:
+  image:
+    tag: prod
+
+ingress:
+  enabled: true
+  hosts:
+    - host: prod.myapp.example.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
