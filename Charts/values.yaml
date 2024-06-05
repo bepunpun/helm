@@ -11,7 +11,7 @@ service:
 
 ingress:
   enabled: true
-  domain: my-first-app.local
+  domain: mern-app.local
   paths:
     - path: /
       backendService: frontend
